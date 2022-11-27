@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Получить число и выдать его квадрат
+Console.WriteLine("Введите число ");
+int num = int.Parse(Console.ReadLine());
+Console.WriteLine(num * num);
