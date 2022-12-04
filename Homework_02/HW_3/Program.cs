@@ -3,13 +3,13 @@
 
 
 void Num3(int arg)
-{if (arg < 100 || arg > 999)
+{if ((arg < 100 & arg > -100) || arg > 999 || arg <-999)
     {
         Console.WriteLine("Третьей цифры нет!");
     }
     else 
     {
-        Console.WriteLine($"Третья цифра {arg % 10}");
+        Console.WriteLine($"Третья цифра {Math.Abs(arg % 10)}");
     }
 }
 Console.WriteLine("Введите трехзначное число");

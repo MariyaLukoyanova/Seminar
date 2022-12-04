@@ -5,7 +5,7 @@
 
 
 int Num(int arg)
-{while(arg < 100 || arg > 999)
+{while((arg < 100 & arg > -100) || arg > 999 || arg < -999)
     {
         Console.WriteLine("Число не трехзначное!");
         Console.WriteLine("Введите трехзначное число");
@@ -16,4 +16,4 @@ int Num(int arg)
 
 Console.WriteLine("Введите трехзначное число");
 int num = int.Parse(Console.ReadLine());
-Console.WriteLine($"Вторая цифра в числе {(Num(num)%100)/10}");
+Console.WriteLine($"Вторая цифра в числе {Math.Abs((Num(num)%100)/10)}");
