@@ -10,14 +10,15 @@ int ReadNumber(string message)
     return a;
 }
 
-int Power(int a, int b)
+double Power(int a, int b)
 {
     if (a == 0) return 0;
     if (b == 0) return 1;
-    int pow = a;
-    for (int i = 1; i < b; i++)
+    double pow = 1;
+    for (int i = 1; i <= Math.Abs(b); i++)
     {
-        pow = pow * a;
+        if (b > 0) pow = pow * a;
+        if (b < 0) pow = pow / a;
     }
     return pow;
 }
