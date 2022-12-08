@@ -41,3 +41,5 @@ int num = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите количество цифр в числе");
 int N = int.Parse(Console.ReadLine());
 Console.WriteLine(Pal(num, N));
+
+// Можно было посчитать длину палиндрома пока он в виде строки
