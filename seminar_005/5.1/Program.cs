@@ -20,16 +20,16 @@ void PrintArray(int[] array)
     Console.WriteLine();
 }
 
-int[] Change(int[] array)
+void Change(int[] array)
 {
     for (int i=0; i<array.Length; i++)
     {
         array[i]=array[i]*-1;
     }
-return array;
 }
 
 Console.WriteLine("Введите длину массива");
 int[] array = Massiv(int.Parse(Console.ReadLine()));
 PrintArray(array);
-PrintArray(Change(array));
+Change(array);
+PrintArray(array);
