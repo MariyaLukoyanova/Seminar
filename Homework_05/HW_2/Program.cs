@@ -23,9 +23,9 @@ void PrintArray(int[] array)
 int Search(int[] array)
 {
     int sum = 0;
-    for (int i = 0; i < array.Length; i+=2)
+    for (int i = 0; i < array.Length; i += 2)
     {
-            sum+=array[i]; 
+        sum += array[i];
     }
     return sum;
 }
