@@ -8,7 +8,7 @@ int[] Massiv(int n)
     int[] array = new int[n];
     for (int i = 0; i < n; i++)
     {
-        array[i] = new Random().Next(0, 100);
+        array[i] = new Random().Next(1, 100);
     }
     return array;
 }
@@ -23,6 +23,6 @@ void PrintArray(int[] array)
 }
 
 Console.WriteLine("Введите длину массива");
-int[] array=Massiv(int.Parse(Console.ReadLine()));
+int[] array = Massiv(int.Parse(Console.ReadLine()));
 PrintArray(array);
 
