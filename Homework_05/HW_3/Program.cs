@@ -30,8 +30,7 @@ void Search(double[] array)
         if (array[i] > max) max = array[i];
         if (array[i] < min) min = array[i];
     }
-    Console.WriteLine($"Минимальное число: {min}");
-    Console.WriteLine($"Максимальное число: {max}");
+    Console.WriteLine($"Разница между максимальным и минимальном числами массива: {Math.Round((max - min), 2)}");
 }
 
 Console.WriteLine("Введите длину массива");
