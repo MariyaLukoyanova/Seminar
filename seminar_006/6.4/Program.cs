@@ -14,9 +14,9 @@ int[,] Massiv(int raw, int column, int from, int to)
 
 void PrintArray(int[,] array)
 {
-    int raw = array.GetLength(0);
+    int row = array.GetLength(0);
     int column = array.GetLength(1);
-    for (int i = 0; i < raw; i++)
+    for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < column; j++)
         {
@@ -29,10 +29,10 @@ void PrintArray(int[,] array)
 
 int[,] Copy(int[,] array)
 {
-    int raw = array.GetLength(0);
+    int row = array.GetLength(0);
     int column = array.GetLength(1);
-    int[,] newArr = new int[raw, column];
-    for (int i = 0; i < raw; i++)
+    int[,] newArr = new int[row, column];
+    for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < column; j++)
             newArr[i, j] = array[i, j];
