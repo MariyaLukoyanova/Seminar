@@ -34,7 +34,7 @@ void DescendingRaw(int[,] array)
         for (int m = 0; m < array.GetLength(1); m++)
         {
             for (int j = m; j < array.GetLength(1); j++)
-                if (array[i, j] < array[i, m]) (array[i, m], array[i, j]) = (array[i, j], array[i, m]);
+                if (array[i, j] > array[i, m]) (array[i, m], array[i, j]) = (array[i, j], array[i, m]);
         }
     }
 }
